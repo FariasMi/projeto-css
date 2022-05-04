@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/0accc61e45.js" crossorigin="anonymous"></script>
+    <title>Portfólio</title>
+</head>
+<body>
+    <header>
+        <div id="logo">
+            <img src="images/logo.png" alt="logo">
+        </div>
+        <nav class="menu">
+            <ul>               
+                <li><a href="https://github.com/FariasMi" target="_blank">git hub</a></li>
+                <li><a href="https://teste@teste.com" target="_blank">me liga!</a></li>
+                <li><a href="mailto:teste@teste.com" target="_blank">email</a></li>
+            </ul>
+        </nav>
+    </header>   
+    <main>
+        <section class="container"> 
+            <div class="intro">
+                <h1>Michele Farias</h5>
+                <h5>IT Professional</h5>
+            </div>            
+                <i id="animation" onclick="displayAbout()" class="fa-solid fa-caret-up"></i>        
+           
+            <div id="about" class="deactive">                   
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus 
+                    placeat sequi cum nemo consequuntur doloremque officiis ex, 
+                    iure corporis accusantium laudantium architecto 
+                    soluta aliquam illo fuga iste, assumenda, numquam recusandae. Lorem ipsum dolor, 
+                    sit amet consectetur adipisicing elit. Similique nisi ut soluta saepe magnam eum sapiente
+                     natus commodi quibusdam incidunt tenetur consequatur, possimus consectetur? Lorem ipsum dolor 
+                     sit amet consectetur adipisicing elit. Architecto eos, facilis vel quam eaque exercitationem 
+                     tenetur sit praesentium itaque ab neque labore odit autem! Officia fugiat facere quibusdam dolor magni.
+                </p>  
+            </div>
+
+            <div class="form">
+                <form action="">
+                    <p>Deixe seu contato</p>
+                    <input type="text" placeholder="seu melhor email :)">
+                    <button class="btn">Enviar!</button>
+                    
+                </form>              
+            </div> 
+
+
+        </section>  
+                  
+             
+    </main>
+    <script>
+        function displayAbout(){
+            let arrow = document.getElementById('animation');
+            arrow.classList.toggle('rotate');
+            let display = document.getElementById('about');
+            display.classList.toggle('active');
+        }
+    </script>
+</body>
+</html>
